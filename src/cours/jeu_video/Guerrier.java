@@ -1,6 +1,6 @@
 package cours.jeu_video;
 
-public class Guerrier extends Personnage{
+public class Guerrier extends Personnage implements Attaquant{
     private String arme;
 
     public Guerrier(String nom, int dureeDeVie, String arme) {
@@ -22,10 +22,16 @@ public class Guerrier extends Personnage{
         System.out.println("Je suis un guerrier!!!");
     }
 
+
     @Override
     public String toString(){
 //        Très mauvaise pratique
 //        return String.format("Nom : %s\nDurée de vie : %d\nArme : %s",this.getNom(),this.getDureeDeVie(),this.arme);
         return String.format("%s\nArme : %s",super.toString(),this.arme);
+    }
+
+    @Override
+    public void attaquer() {
+        System.out.println("Je vais te tuer");
     }
 }

@@ -1,6 +1,6 @@
 package cours.jeu_video;
 
-public class Magicien extends Personnage{
+public class Magicien extends Personnage implements Attaquant{
     private String baguetteMagique;
 
     public Magicien(String nom, int dureeDeVie, String baguetteMagique) {
@@ -20,8 +20,14 @@ public class Magicien extends Personnage{
         System.out.println("Je suis un Magicien!!!");
     }
 
+
     @Override
     public String toString() {
         return String.format("%s\nBaguette magique : %s",super.toString(),this.baguetteMagique);
+    }
+
+    @Override
+    public void attaquer() {
+        System.out.println("Fais gaffe!!");
     }
 }
