@@ -15,8 +15,7 @@ public class JeuVideoMain {
 
         System.out.println(Personnage.getNombrePersonnages());
 
-
-
+        System.out.println(Personnage.DUREE_DE_VIE_PAR_DEFAUT);
 
 //        chris.rencontrer();
 //        arnaud.rencontrer();

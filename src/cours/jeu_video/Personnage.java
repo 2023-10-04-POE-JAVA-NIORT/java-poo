@@ -1,6 +1,7 @@
 package cours.jeu_video;
 
 public abstract class Personnage {
+    public static final int DUREE_DE_VIE_PAR_DEFAUT=200;
     private static int nombrePersonnages=0;
     private String nom;
     private int dureeDeVie;
