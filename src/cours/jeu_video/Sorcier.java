@@ -1,4 +1,4 @@
-package jeu_video;
+package cours.jeu_video;
 
 public class Sorcier extends Magicien{
     private String batonMagique;
@@ -14,6 +14,12 @@ public class Sorcier extends Magicien{
 
     public void setBatonMagique(String batonMagique) {
         this.batonMagique = batonMagique;
+    }
+
+
+    @Override
+    public String toString(){
+        return String.format("%s\nBaton magique : %s\n",super.toString(),this.batonMagique);
     }
 
 }

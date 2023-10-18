@@ -1,4 +1,4 @@
-package jeu_video;
+package cours.jeu_video;
 
 public class Guerrier extends Personnage{
     private String arme;
@@ -17,7 +17,15 @@ public class Guerrier extends Personnage{
         this.arme = arme;
     }
 
+    @Override
     public void rencontrer(){
         System.out.println("Je suis un guerrier!!!");
+    }
+
+    @Override
+    public String toString(){
+//        Très mauvaise pratique
+//        return String.format("Nom : %s\nDurée de vie : %d\nArme : %s",this.getNom(),this.getDureeDeVie(),this.arme);
+        return String.format("%s\nArme : %s",super.toString(),this.arme);
     }
 }

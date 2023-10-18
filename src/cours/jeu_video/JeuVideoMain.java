@@ -1,4 +1,4 @@
-package jeu_video;
+package cours.jeu_video;
 
 public class JeuVideoMain {
     public static void main(String[] args) {
@@ -7,9 +7,20 @@ public class JeuVideoMain {
         var gilles=new Sorcier("Gilles",600,"Abc","Xyz");
 //        var p=new Personnage("Papy",20); => Erreur car personnage est une classe abstraite
 
-        chris.rencontrer();
-        arnaud.rencontrer();
-        gilles.rencontrer();
+        System.out.println(chris.getNom());
+
+        System.out.println(chris);
+        System.out.println(arnaud);
+        System.out.println(gilles);
+
+        System.out.println(Personnage.getNombrePersonnages());
+
+
+
+
+//        chris.rencontrer();
+//        arnaud.rencontrer();
+//        gilles.rencontrer();
     }
 }
 

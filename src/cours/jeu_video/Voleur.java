@@ -1,4 +1,4 @@
-package jeu_video;
+package cours.jeu_video;
 
 public class Voleur extends Personnage{
     private  String outil;

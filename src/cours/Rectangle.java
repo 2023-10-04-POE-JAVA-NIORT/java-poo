@@ -1,3 +1,5 @@
+package cours;
+
 public class Rectangle {
 
     // Variables membres = attributs = propriétes

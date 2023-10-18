@@ -1,4 +1,4 @@
-package jeu_video;
+package cours.jeu_video;
 
 public class Magicien extends Personnage{
     private String baguetteMagique;
@@ -18,5 +18,10 @@ public class Magicien extends Personnage{
     }
     public void rencontrer(){
         System.out.println("Je suis un Magicien!!!");
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s\nBaguette magique : %s",super.toString(),this.baguetteMagique);
     }
 }
